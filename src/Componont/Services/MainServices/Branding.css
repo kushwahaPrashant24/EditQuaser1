@@ -1,0 +1,224 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif; /* Add a default font */
+}
+
+.branding-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.branding-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.branding-page p {
+  font-size: 1.2rem;
+}
+
+/* Overlay styling */
+.service-header-overlay {
+  position: absolute;
+  text-align: center;
+  color: #fff; /* Text color */
+  top: 45%;
+  left: 40%;
+
+
+}
+
+/* Title styling */
+.service-header-title {
+  font-size: 5.5rem; /* Larger size for Branding */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Optional: Add spacing between title and description */
+}
+
+/* Description styling */
+.service-header-description {
+  font-size: 1.5rem; /* Smaller size for description */
+  line-height: 1.5;
+}
+
+.ServicesGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.ServicesGrid > * {
+  flex-basis: calc(33.33% - 60px); /* Adjust width and margin */
+  margin-bottom: 20px; /* Adjust margin between rows */
+  padding: 1rem;
+}
+
+.our-process {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 0.1rem;
+  border-radius: 8px;
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: center; /* Center items vertically */
+}
+
+.process-video {
+  width: 19rem; /* Adjust width as needed */
+  height: 20rem; /* Ensure aspect ratio is maintained */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for visual depth */
+  margin-right: 10px; /* Margin between video and process sections */
+  position: sticky; /* Make video sticky */
+  top: 10px; /* Adjust the top position as needed */
+  padding-left: 5rem;
+}
+
+.processes {
+  flex: 1; /* Allow the processes section to expand and fill remaining space */
+  padding: 10px;
+  padding-right: 5rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+.processes > * {
+  padding: 20px 0; /* Add padding to top and bottom of each process section */
+  display: flex;
+  align-items: center;
+  border-top: 1px solid white; /* Add top border to each process section */
+}
+
+.processes > *:first-child {
+  border-top: none; /* Remove top border from the first process section */
+}
+
+.Title {
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: left;
+  margin-left: 5rem;
+  color: white;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 2.1rem;
+}
+
+.description-video {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.pause-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pause-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mute-button {
+  position: absolute;
+  bottom: 17px;
+  right: 13rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mute-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.branding-description {
+  padding: 20px;
+}
+
+.FAQ {
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+}
+
+/* More specific selectors to override existing styles */
+ .view-all-services-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 4rem;
+} 
+
+.custom-button {
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: 100%; /* Make the button fill the height of the container */
+}
+
+.custom-button:hover {
+  background-color: violet;
+  color: white;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure content is centered within the button */
+}
+
+.button-content .text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit-button{
+  margin-right: 2rem;
+}

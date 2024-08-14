@@ -1,0 +1,79 @@
+.our-service {
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column; /* Change to column to stack title and description */
+  align-items: flex-start; /* Align items to the start */
+  justify-content: flex-start; /* Align content to the top */
+  border-bottom: 1px solid white; /* Add border-bottom to separate sections */
+  position: relative;
+  transition: all 0.2s ease; /* Increased transition duration */
+  width: 100%;
+}
+
+.service-description {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  width: 100%;
+}
+
+.title {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font: normal;
+  width: 100%;
+  text-align: justify; /* Justify text in title */
+  font-size:xx-large;
+}
+
+.title-text {
+  flex: 1; /* Allow title text to take up available space */
+  text-align: justify; /* Justify text in title */
+}
+
+.title:hover .title-text {
+  margin-left: 2rem;
+  transition: 0.2s ease; /* Increased transition duration */
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  flex-shrink: 0; /* Prevent shrinking */
+  margin-left: 10px;
+}
+
+.description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out, padding 0.2s ease-out; /* Increased transition duration */
+  color: white;
+  width: 100%;
+  text-align: justify; /* Justify text in description */
+}
+
+.description.open {
+  max-height: 1000px; /* Set to a large value to accommodate content of varying lengths */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.description p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.title.active {
+  color: #007bff;
+}
+
+.title.active + .description {
+  display: block;
+}

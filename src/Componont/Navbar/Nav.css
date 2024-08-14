@@ -1,0 +1,152 @@
+/* Add this to your CSS file */
+.hover-box {
+    position: fixed; /* Change position to fixed */
+    /* top: 10%; */
+    left: 0;
+    width: 100vw; /* Set width to 100% of viewport width */
+    height: 70vh; /* Set height to 100% of viewport height */
+    background-color: rgba(0, 0, 0, 0.881);
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    padding-top:2rem ;
+    transform: translateY(-20px);
+    z-index: -1;
+    display: none;
+}
+
+.hover-box.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: repeat(4, 1fr); Creates four equal columns */
+    gap: 20px; /* Adjust the gap between columns as needed */
+    padding: 0 10rem; /* Add left and right padding */
+    height: 80%;
+}
+
+.grid-item {
+    background-color: transparent; /* Example background color */
+    padding: 10px; /* Example padding for each item */
+    /* Center the content */
+    border-radius: 4px; /* Example border radius */
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.services-header{
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.7rem;
+    max-width: 19.8888888889rem;
+    line-height: 1.29;
+    
+}
+
+.service-arrow{
+    display: flex;
+    align-items: center;
+}
+
+
+.serivces-dis{
+    color: white;
+    text-align: left;
+    margin-top: 50px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.material-symbols-outlined{
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+
+
+.sub-heading-title{
+    color: #e3e3e3;
+    text-decoration: none;
+    margin-bottom: 0;
+    transition: color .3s ease;
+    font-weight: 500 ;
+    text-align: left;
+
+    
+}
+
+.service-heading-title{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    appearance: none;
+    line-height: 1.1;
+    color: inherit ;
+    opacity: .7;
+    font-weight: 300;
+    padding-left: 0 ;
+    padding-top: 10px ;
+    transition: opacity .3s ease-in-out;
+    font-size: .8888888889rem;
+}
+/* more */
+
+/* Nav.css */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-icon {
+    margin-left: 8px;
+    font-size: small;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .hover-box {
+    display: none;
+  }
+  
+  .hover-box.visible {
+    display: block;
+  }
+  

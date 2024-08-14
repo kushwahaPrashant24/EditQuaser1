@@ -1,0 +1,9 @@
+body{
+    background-image: linear-gradient(to right top, #13072e, #13072e, #13072e, #13072e, #13072e);
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+
+
+

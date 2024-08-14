@@ -1,0 +1,68 @@
+
+
+/* Show the image when hovering over the button */
+.container:hover .hover-image {
+    display: block;
+}
+
+
+
+/* Basic styling for the button */
+.hover-button {
+   
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for the image - initially hidden */
+.hover-image {
+    height: 200px;
+    width: 400px;
+    border-radius: 30px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* Center the image */
+    max-width: 250px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Show the image when hovering over the button */
+.container:hover .hover-image {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*  */
+
+.dialog-right .MuiPaper-root {
+    right: 0 !important;
+    left: auto !important; /* Ensure it doesn't try to center */
+    transform: none !important; /* Remove default centering transform */
+    max-width: none; /* Remove the max-width limitation */
+    width: 100%; /* Make it span full width up to defined limits */
+    max-width: 600px; /* Set a maximum width for the dialog */
+    height: 100vh; /* Full viewport height */
+    border-radius: 0; /* Optional: remove border radius for a sharp edge */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for visibility */
+  }
+
+  @media (min-width: 600px) {
+    .dialog-right .MuiPaper-root {
+      width: 40%; /* Adjust width for larger screens */
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .dialog-right .MuiPaper-root {
+      width: 30%; /* Further adjust for even larger screens */
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .dialog-right .MuiPaper-root {
+      width: 25%; /* Narrower width for extra large screens */
+    }
+  }

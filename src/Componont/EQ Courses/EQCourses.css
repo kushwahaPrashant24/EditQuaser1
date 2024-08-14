@@ -1,0 +1,64 @@
+/* EQCourses.css */
+.eq-courses {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.eq-courses .content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.eq-courses h2 {
+    font-size: 4.5em;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.eq-courses p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.eq-courses .coming-soon {
+    font-size: 1.5em;
+    color: lightblue;
+    margin-bottom: 30px;
+}
+
+.eq-courses button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.eq-courses button:hover {
+    background-color: white;
+    color: #1f1c2c;
+}

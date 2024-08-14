@@ -1,0 +1,122 @@
+.location-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.header h2 {
+    font-size: 60px;
+   margin-bottom: 0.5rem;
+}
+
+
+
+.location-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* margin-left: 10rem; */
+
+}
+
+.address-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-image {
+    width: 48%; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.location-details-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Adjust the width to fit the blocks side by side */
+    text-align: left;
+    
+
+}
+
+.location-details .left {
+    text-align: left;
+}
+.block1 {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px; /* Space between blocks */
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    align-items: center;
+    
+    
+     /* Align icon and text vertically */
+  }
+
+.right {
+    display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 10px;
+  margin-right: 4rem;
+}
+  
+.two-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Adjust width as needed */
+    margin-bottom: 10px; /* Space between rows */
+    flex-wrap: wrap;
+
+}
+
+  
+.block1 p {
+    margin: 0; /* Remove default margin */
+    font-size: 1em;
+} 
+
+.contact-info{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+  
+.contact-info p{
+    font-size: larger;
+}
+  
+.location-details h3 {
+    margin-top: 0;
+}
+
+.location-details p {
+    margin: 0 0;
+}
+
+.location-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.location-details a:hover {
+    text-decoration: underline;
+}

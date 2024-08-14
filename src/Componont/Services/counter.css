@@ -1,0 +1,139 @@
+.count{
+    position: relative;
+   
+   margin-left:13vw;
+   top: 6vh;
+   display: grid;
+
+   grid-template-columns: repeat(3,18vw);
+   
+   
+}
+
+.card1{
+    
+    padding:4vw ;
+    border:4px solid;
+    text-align: center;
+    border-color:#ffffff;
+    
+    
+}
+
+.card2{
+    text-align: center;
+    
+    padding:4vw;
+    border:4px solid;
+    border-color:#ffffff;
+
+}
+.card3{
+    text-align: center;
+    
+    
+    padding:4vw;
+    border:4px solid ;
+    border-color:#ffffff;
+
+}
+.card1 p{
+    position: relative;
+    color: #ffffff;
+    width:30vw;
+    font-size: 1.5vw;
+    right: 6vw;
+    top:1vw;
+    
+}
+.card2 p{
+    position: relative;
+    color:#ffffff;
+    width:30vw;
+    font-size: 1.5vw;
+    right: 6vw;
+    top:1vw;
+    
+}
+.card3 p{
+    position: relative;
+    color: #ffffff;
+    width:30vw;
+    font-size: 1.5vw;
+    right: 6vw;
+    top:1vw;
+    
+}
+@media (max-width:600px) {
+    .count{
+        grid-template-columns: repeat(1,18vw);
+        right: 25vw;
+    }
+
+    .card1{
+    
+        padding:5vw 30vw ;
+        border:3px solid grey;
+        text-align: center;
+    }
+    
+    .card2{
+        text-align: center;
+        
+        padding:5vw 30vw;
+        border:3px solid grey;
+    
+    }
+    .card3{
+        text-align: center;
+        
+        
+        padding:5vw 30vw;
+        border:3px solid grey;
+    
+    }
+    .card1 h1{
+        position: relative;
+        right: 20vw;
+    }
+    .card2 h1{
+        position: relative;
+        right: 20vw;
+
+    }
+    .card3 h1{
+        position: relative;
+        right: 20vw;
+    }
+    .card1 p{
+        position: relative;
+        color: white;
+        width:50vw;
+        font-size: 4.5vw;
+        right: 14vw;
+        top:1vw;
+        
+    }
+    .card2 p{
+        position: relative;
+        color: white;
+        width:50vw;
+        font-size: 4.5vw;
+        right: 14vw;
+        top:1vw;
+        
+    }
+    .card3 p{
+        position: relative;
+        color: white;
+        width:50vw;
+        font-size: 4.5vw;
+        right: 14vw;
+        top:1vw;
+        
+    }
+    
+    
+}
+
+

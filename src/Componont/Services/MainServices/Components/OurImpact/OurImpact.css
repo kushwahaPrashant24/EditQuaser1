@@ -1,0 +1,62 @@
+.impact-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black; /* Ensure the background color is black for contrast */
+  }
+  
+  .ourimpact-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire section */
+     
+  }
+  
+  .impact-inner {
+    position: relative;
+    z-index: 1; /* Ensure text is above the video */
+    color: white; /* Set text color to white */
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .impact-inner h2 {
+    font-size: 3rem; /* Increase heading font size */
+    color: white !important; /* Ensure heading color is white */
+    margin-bottom: 30px;
+  }
+  
+  .impact-inner p {
+    font-size: 1.5rem; /* Increase paragraph font size */
+    line-height: 1.8; /* Adjust line height for readability */
+    color: white !important; /* Ensure paragraph text color is white */
+    margin-bottom: 40px; /* Add margin for spacing */
+  }
+  
+  .impact-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .impact-stat {
+    text-align: center;
+    flex: 1; /* Make each stat take equal space */
+    margin: 0 20px; /* Add margin for spacing */
+  }
+  
+  .impact-number {
+    font-size: 4rem; /* Increase number font size */
+    font-weight: bold;
+    color: white !important; /* Ensure number color is white */
+  }
+  
+  .impact-text {
+    font-size: 1.5rem; /* Increase text font size */
+    margin-top: 15px;
+    color: white !important; /* Ensure text color is white */
+  }
+  

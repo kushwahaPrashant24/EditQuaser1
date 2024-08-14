@@ -1,0 +1,82 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  color: #333;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+  height: 300px; /* Ensure card takes full available height */
+}
+
+.service-image {
+  height: 150px; /* Adjust height of the image container */
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-image:hover img {
+  transform: scale(1.05); /* Hover effect only on image */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  flex-grow: 1; /* Allow card body to grow and take available space */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-top: 0.75rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 0.5rem;
+  flex-grow: 1; /* Allow card text to grow and take available space */
+  overflow: hidden; /* Ensure text doesn't overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit text to 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto; /* Ensure button stays at the bottom */
+}
+
+.btn::after {
+  content: '\2192'; /* Unicode arrow right character */
+  margin-left: 0.4rem;
+}
+
+@media (max-width: 767px) {
+  .service-image {
+    height: 220px; /* Adjust image height for smaller screens */
+  }
+
+  .card-title {
+    font-size: 1.5rem; /* Increase title font size for smaller screens */
+  }
+}

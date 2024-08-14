@@ -1,0 +1,58 @@
+.brand-identity-container {
+    font-family: Arial, sans-serif; /* Choose your preferred font family */
+    color: white; /* Default text color */
+  }
+  
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px; /* Adjust max width as needed */
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem; /* Adjust heading font size */
+  }
+  
+  .content-section {
+    padding: 50px 20px; /* Adjust padding as needed */
+    text-align: center;
+  }
+  
+  .content-inner {
+    max-width: 800px; /* Adjust max width as needed */
+    margin: 0 auto; /* Center align content */
+  }
+  
+  .content-inner h2 {
+    font-size: 2.3rem !important; /* Adjust heading font size */
+    color: white; /* Heading color */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+    text-align: justify;
+    word-spacing: -0.1em;
+  }
+  
+  .content-inner p {
+    font-size: 1.2rem; /* Adjust paragraph font size */
+    line-height: 1.6; /* Adjust line height for readability */
+    color: white; /* Paragraph text color */
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+  
+  .button-ltalk{
+    text-align: justify;
+    margin-left: 21.2rem;
+  }
+  
+  .new-section{
+    margin-top: 0px;
+  }

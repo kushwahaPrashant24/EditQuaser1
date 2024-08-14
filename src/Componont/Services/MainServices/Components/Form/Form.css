@@ -1,0 +1,158 @@
+/* Styling for the new section */
+/* New Section */
+.new-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: black;
+  width: 100%;
+}
+
+.section-container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.text-and-images, .form-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-and-images {
+  border-right: 1px solid #ccc;
+}
+
+.text-and-images .text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.text-and-images .text .heading {
+  font-size: 64px;
+ font-weight: 100;
+  text-align: justify; /* Change to center alignment */
+  margin-bottom: 40px;
+  word-spacing: normal; /* Ensure normal word spacing */
+  margin-left: 4rem;
+  margin-right: 4rem;
+  
+}
+
+.text-and-images .text .descrip {
+  font-size: 22px;
+  text-align: justify;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.text-and-images .images {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  margin-left: 8rem;
+}
+
+.text-and-images .images img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.images .name p {
+  font-size: 14px;
+  text-align: justify;
+  font-weight:600;
+}
+
+.images .name h2 {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.images .name a {
+  display: block;
+  margin-top: 5px;
+  color: black;
+  text-decoration: underline;
+}
+
+.images .name a:hover {
+  text-decoration: none;
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; /* Ensure it covers the whole width */
+  padding: 0 20px; /* Add padding only on the sides to avoid right and left padding */
+}
+
+.form-section {
+  margin: 30px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-section label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-section label span {
+  color: red;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .new-section {
+      flex-direction: column;
+  }
+
+  .section-container {
+      flex-direction: column;
+  }
+
+  .text-and-images {
+      border-right: none; /* Remove border on small screens */
+      border-bottom: 1px solid #ccc; /* Add border at bottom for separation */
+  }
+
+  .text-and-images .images img {
+      width: 100%;
+  }
+}
+.submit-button{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.submit-button:hover{
+  background-color: black;
+  color: white;
+}

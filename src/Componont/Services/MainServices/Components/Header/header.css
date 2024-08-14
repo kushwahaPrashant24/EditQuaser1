@@ -1,0 +1,35 @@
+/* Reset some default browser styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the header section */
+.service-header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Video styling to cover the entire header section */
+.service-header-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Send video to the background */
+}
+
+
+
+/* Next section styling */
+.next-section {
+    padding: 2rem; /* Add some padding for the next section */
+}
